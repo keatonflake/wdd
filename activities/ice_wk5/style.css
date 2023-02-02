@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+}
+.hero img{
+    width: 100vw;
+}
+.three_options{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.circle{
+    border-radius: 50%;
+    border: 10px solid rgb(89, 87, 87);
+    width: 250px;
+}
