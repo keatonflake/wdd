@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:wght@100&display=swap');
+
+:root {
+    --heading-font: "Nunito";
+    --paragraph-font: "Roboto", Lato, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #DFD7CC;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5A779F;
+    padding: 230px;
+    position: fixed;
+    z-index: -1;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.logo_box {
+    margin-top: 80px;
+    float: left;
+    margin-left: 10px;
+
+}
+
+.logo {
+    width: 250px;
+}
+
+.profile_pic_box {
+    margin-top: 150px;
+    margin-left: 200px;
+    border-radius: 50px;
+}
+
+.profile_pic {
+    width: 250px;
+    border-radius: 150px;
+    border: solid 3px white;
+}
+
+.name {
+    grid-column: 4/6;
+    margin-top: 250px;
+    font-size: 40px;
+    font-family: var(--heading-font);
+    color: white;
+}
+
+.welcome_box {
+    grid-column: 2/3;
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: white;
+    font-size: 30px;
+    border: solid 10px #6B6363;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.welcome_box h1 {
+    font-family: var(--heading-font);
+}
+
+.welcome_box p {
+    font-family: var(--paragraph-font);
+    margin-right: 10px;
+}
+
+.about_me_button {
+    background-color: #5A779F;
+    padding: 10px;
+    width: 150px;
+    border-radius: 40px;
+    margin: auto;
+}
+
+.about_me_button a {
+    font-family: var(--paragraph-font);
+    color: white;
+}
+
+.insta_box {
+    grid-column: 6/9;
+    margin-top: 100px;
+    background-color: #6B6363;
+    width: 500px;
+    height: 100px;
+    border-radius: 40px;
+}
+
+.insta_link {
+    margin-top: -110px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: var(--paragraph-font);
+}
+
+.insta_logo {
+    width: 100px;
+    transition: transform .2s;
+}
+
+.insta_logo:hover {
+    transform: scale(1.5);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    margin-top: -500px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.scroll_photo {
+    max-height: 500px;
+    max-width: 700px;
+    border: solid 10px #6B6363;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    /* position: absolute; */
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    padding: 20px 20px;
+    color: #5A779F;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 15px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    /* right: 0; */
+    margin-left: 550px;
+}
+
+.prev {
+    margin-left: 100px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5A779F;
+    padding: 20px;
+}
