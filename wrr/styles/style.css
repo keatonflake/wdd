@@ -260,6 +260,28 @@ footer a:hover {
     color: black;
 }
 
+/* SCHEDULE PAGE STYLE */
+.schedule_body{
+    align-content: center;
+    text-align: center;
+}
+.trip_background{
+    background-color: var(--accent1-color);
+    color: white;
+    font-family: var(--paragraph-font);
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.trip_background h1{
+    color: black;
+    font-family: var(--heading-font);
+}
+.wide_img{
+    width: 80%;
+    border: 3px solid black;
+    margin-top: 30px;
+}
+
 @media screen and (max-width: 900px) {
 
     #hero,
