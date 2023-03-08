@@ -7,6 +7,7 @@
 
 body {
     background-color: #DFD7CC;
+    max-width: fit-content;
 }
 
 header {
@@ -203,3 +204,7 @@ footer {
     background-color: #5A779F;
     padding: 20px;
 }
+
+@media only screen and (max-width: 2100px) {
+    
+  }
