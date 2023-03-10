@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:wght@100&display=swap');
+
+:root {
+    --heading-font: "Nunito";
+    --paragraph-font: "Roboto", Lato, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #DFD7CC;
+    max-width: fit-content;
+}
+header {
+    background-color: #5A779F;
+    position: absolute;
+    height: 20vh;
+    width: 100vw;
+    z-index: -1;
+}
+.logo{
+    max-width: 10vw;
+}
+.profile_pic{
+    width: 150px;
+    border-radius: 150px;
+    border: solid 3px white;
+}
+.insta_logo{
+    width: 5vw;
+}
+.scroll_photo{
+    width: 30vw;
+}
+
+footer{
+    background-color: #5A779F;
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    z-index: -1;
+}
