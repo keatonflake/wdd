@@ -1,25 +1,22 @@
-let slideIndex = 0;
-showSlides(slideIndex);
+var i = 0;
+var images = [];
+var time = 3000;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// img list
+images[0] = './images/bonzi.jpeg';
+images[1] = './images/woman_portrait.jpeg';
+images[2] = './images/Tree_best_scan.jpg';
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+function changeImage(){
+  document.slide.src = images[i];
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-//   if (n == 1) {}
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  if (i < images.length -1) {
+    i++;
+  } else{
+    i = 0;
   }
-  slides[slideIndex-1].style.display = "block";
-
+  setTimeout("changeImage()", time);
 }
+
+window.onload = changeImage;
+
