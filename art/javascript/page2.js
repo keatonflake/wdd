@@ -1,10 +1,12 @@
 var bonzi_images = [];
 var doodleImages = [];
 var womanImages = [];
+var treeImages = [];
 
 var bonziCount = 0;
 var womanCount = 0;
 var doodleCount = 0;
+var treeCount = 0;
 
 var time = 3000;
 
@@ -20,6 +22,10 @@ doodleImages[2] = './images/doodle3.jpg';
 womanImages[0] = './images/woman1.jpeg';
 womanImages[1] = './images/woman2.jpeg';
 womanImages[2] = './images/woman3.jpeg';
+
+treeImages[0] = './images/tree1.jpg';
+treeImages[1] = './images/tree2.jpg';
+treeImages[2] = './images/tree3.jpg';
 
 
 function changeImage(){
@@ -48,6 +54,16 @@ if (womanCount < womanImages.length -1) {
   womanCount++;
 } else{
   womanCount = 0;
+}
+
+// tree
+document.treeSlide.src = treeImages[treeCount];
+  
+if (treeCount < treeImages.length -1) {
+  console.log(treeCount)
+  treeCount++;
+} else{
+  treeCount = 0;
 }
     // setTimeout("changeDoodleImage()", time);
     
