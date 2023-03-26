@@ -62,15 +62,10 @@ header a:hover{
 
 footer{
     background-color: #5A779F;
-    /* position: absolute;
-   
-    bottom: 0;
-    
-    z-index: -1; */
     left: 0;
     height: 5vh;
-    /* width: 100vw; */
     margin-top: auto;
+    width: 100vw;
 }
 footer a {
     text-decoration: none;
